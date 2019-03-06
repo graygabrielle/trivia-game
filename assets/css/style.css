@@ -2,6 +2,70 @@ html {
     background-image: url("../img/map.jpg");
     background-size: cover;
     height: 100%;
+    width: 100%;
     background-position: center center;
 }
 
+/* .box::before {
+    content: "";
+    background: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.75;
+    border-radius: 15px;
+ 
+} */
+
+.box {
+    background: rgba(0, 0, 0, 0.808);
+    position: relative;
+    margin: 25vh auto;
+    height: 50vh;
+    width: 60%;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 15px;
+
+
+}
+
+.header {
+    font-family: 'Fredericka the Great', cursive;
+    color: #e3c7a0;
+    font-size: 3.5em;
+    letter-spacing: 4px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    font-family: 'Special Elite', cursive;
+    margin-top: 30px;
+    padding: 20px 35px;
+    background-color: #d26b2f;
+    color: black;
+    font-size: 2em;
+    border: 1px solid white);
+    border-radius: 20%/50%;
+}
+
+button {
+    outline: none;
+}
+
+.instructions{
+    font-family: 'Amatic SC', cursive;
+    font-weight: lighter;
+    font-size: 2em;
+    color: #e3c7a0;
+
+}
+
+/* font-family: 'Amatic SC', cursive;
+font-family: 'Special Elite', cursive;
+font-family: 'Fredericka the Great', cursive; */
