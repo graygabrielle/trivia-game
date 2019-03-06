@@ -70,14 +70,30 @@ let questions = [
  
 ]
 
-function initializeGame() {
-    $(".box").empty();
-}
+let i = 0;
+let q = $("<p>" + questions[i].question + "</p>");
+let a1 = $("<p>" + questions[i].possibles[0] + "</p>");
+let a2 = $("<p>" + questions[i].possibles[1] + "</p>");
+let a3 = $("<p>" + questions[i].possibles[2] + "</p>");
+let a4 = $("<p>" + questions[i].possibles[3] + "</p>");
+
+
 
 $(".btn").on("click", initializeGame);
 
+function initializeGame() {
+    $(".box").empty();
+    setTimeout(timer, 1000);
+    
+}
 
+function timer() {
+    $(".box").html(q);
+    $(".box").append(a1);
+    $(".box").append(a2);
+    $(".box").append(a3);
+    $(".box").append(a4);
+    i++;
+    setTimeout(timer, 3000)
 
-// $(".instructions").html(questions[1].question);
-// $("#question").append("<p>" + questions[0].answer + "</p>");
-// $("#question").prepend("<p>" + questions[0].question + "</p>");
+}

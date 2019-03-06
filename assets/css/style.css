@@ -4,6 +4,7 @@ html {
     height: 100%;
     width: 100%;
     background-position: center center;
+    font-family: 'Special Elite', cursive;
 }
 
 .box {
@@ -60,6 +61,6 @@ button:active {
 
 }
 
-font-family: 'Amatic SC', cursive;
+/* font-family: 'Amatic SC', cursive;
 font-family: 'Special Elite', cursive;
-font-family: 'Fredericka the Great', cursive;
+font-family: 'Fredericka the Great', cursive; */
