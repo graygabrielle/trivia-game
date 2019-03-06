@@ -44,13 +44,13 @@ html {
 }
 
 .btn {
-    font-family: 'Special Elite', cursive;
+    font-family: 'Fredericka the Great', cursive;
     margin-top: 30px;
-    padding: 20px 35px;
-    background-color: #d26b2f;
-    color: black;
-    font-size: 2em;
-    border: 1px solid white);
+    padding: 10px 35px;
+    background-color: #e3c7a0;
+    color: white;
+    font-size: 2.5em;
+    border: 1px solid white;
     border-radius: 20%/50%;
 }
 
@@ -58,14 +58,23 @@ button {
     outline: none;
 }
 
+button:hover {
+    background-color: #e3c7a0bb;
+    color: rgba(255, 255, 255, 0.753);
+}
+
+button:active {
+    background-color: black;
+}
+
 .instructions{
     font-family: 'Amatic SC', cursive;
     font-weight: lighter;
     font-size: 2em;
-    color: #e3c7a0;
+    color: white;
 
 }
 
-/* font-family: 'Amatic SC', cursive;
+font-family: 'Amatic SC', cursive;
 font-family: 'Special Elite', cursive;
-font-family: 'Fredericka the Great', cursive; */
+font-family: 'Fredericka the Great', cursive;
