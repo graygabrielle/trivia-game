@@ -83,15 +83,8 @@ let userRight;
 let correctIndex;
 
 
-$(".btn").on("click", initializeGame);
+$(".btn").on("click", nextSlide);
 
-function initializeGame() {
-    i=0;
-    nextSlide();
-    numCorrect = 0;
-    numIncorrect = 0;
-
-}
 
 
 
@@ -131,7 +124,7 @@ function nextSlide() {
 function timeoutPage() {
     correctIndex = questions[i].answer;
     $(".box").empty();
-    $(".box").append("<h1 class='tooSlow'>Not fast enough!</h1>")
+    $(".box").append("<h1 class='declaration'>Not fast enough!</h1>")
     $(".box").append("<h1 class='correction'>The correct answer was: " + questions[i].possibles[correctIndex] + "</h1>")
     numIncorrect++;
     //show timeout answer screen
@@ -142,37 +135,49 @@ function timeoutPage() {
     }
     if (i===11) {
         clearTimeout(timer2);
-        timer3 = setTimeout(finalScreen, 500);
+        timer3 = setTimeout(finalScreen, 1000);
         
     }
 
 }
 
 function showAnswer() {
+    correctIndex = questions[i].answer;
     $(".box").empty();
     //show answer screen
     if (userRight) {
-        $(".box").append("<h1 class='congrats'>Nice work!</h1>")
+        $(".box").append("<h1 class='declaration'>How did you know that?!</h1>")
         numCorrect++;
     }
     else {
-        $(".box").append("<h1 class='niceTry'>Not even close!</h1>")
+        $(".box").append("<h1 class='declaration'>Time to crack open the old atlas...</h1>")
+        $(".box").append("<h1 class='correction'>The correct answer was: " + questions[i].possibles[correctIndex] + "</h1>")
         numIncorrect++;
     }
 
     if (i<11){
         i++;
-        timer2 = setTimeout(nextSlide, 500);
+        timer2 = setTimeout(nextSlide, 1000);
     }
 
     if (i===11) {
         clearTimeout(timer2);
-        timer3 = setTimeout(finalScreen, 500);
+        timer3 = setTimeout(finalScreen, 1000);
         
     }
 
 }
 
+function restartGame() {
+    i=0;
+    numCorrect = 0;
+    numIncorrect = 0;
+    $(".box").empty();
+    $(".box").append("<div class='header'>Trivia Game!</div>");
+    $(".box").append("<div class='instructions'><p>How well do you know your world capitals?</p><p>Choose the right answer before time runs out!</p></div>");
+    $(".box").append("<button class='btn'>Start!</button>");
+    $(".btn").click(nextSlide);
+}
 
 function finalScreen() {
     clearTimeout(timer3);
@@ -180,6 +185,8 @@ function finalScreen() {
     $(".box").append("<h1 class='gameOver'>Game Over!</h1>")
     $(".box").append("<h1 class='correct'>Correct: " + numCorrect + "</h1><br><br>")
     $(".box").append("<h1 class='incorrect'>Incorrect: " + numIncorrect + "</h1>")
+    $(".box").append("<br><button class='btn'>Restart!</button>");
+    $(".btn").click(restartGame);
 }
 
 
