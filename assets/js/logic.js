@@ -1,81 +1,82 @@
 
 
+
 let questions = [
     {
         question: "What is the capital of Armenia?",
         possibles: ["Yerevan", "Sisian", "Tbilisi", "Baku"],
         answer: 0,
-        image: "<img src='../img/armenia' alt='armenia'/>"
+        image: "./assets/img/armenia.jpg"
 
     },
     {
         question: "What is the capital of Kazakhstan?",
         possibles: ["Baku", "Astana", "Karagandy", "Omsk"],
         answer: 1,
-        image: "<img src='../img/kazakhstan' alt='kazakhstan'/>"
+        image: "./assets/img/kazakhstan.jpg"
 
     },
     {
         question: "What is the capital of Finland?",
         possibles: ["Stockholm", "Oslo", "Helsinki", "Copenhagen"],
         answer: 2,
-        image: "<img src='../img/finland' alt='finland'/>"
+        image: "<./assets/img/finland.jpg"
 
     },
     {
         question: "What is the capital of Turkey?",
         possibles: ["Ankara", "Istanbul", "Antalya", "Izmir"],
         answer: 0,
-        image: "<img src='../img/turkey' alt='turkey'/>"
+        image: "./assets/img/turkey.jpg"
 
     },
     {
         question: "What is the capital of Slovakia?",
         possibles: ["Ljubljana", "Zagreb", "Bratislava", "Sarajevo"],
         answer: 2,
-        image: "<img src='../img/slovakia' alt='slovakia'/>"
+        image: "./assets/img/slovakia.jpg"
 
     },
     {
         question: "What is the capital of Angola?",
         possibles: ["Libreville", "Kinshasa", "Bangui", "Luanda"],
         answer: 3,
-        image: "<img src='../img/angola' alt='angola'/>"
+        image: "./assets/img/angola.jpg"
 
     },
     {
         question: "What is the capital of Ecuador?",
         possibles: ["Quito", "Bogota", "Caracas", "Santiago"],
         answer: 0,
-        image: "<img src='../img/ecuador' alt='ecuador'/>"
+        image: "./assets/img/ecuador.jpg"
 
     },
     {
         question: "What is the capital of Papua New Guinea?",
         possibles: ["Tabubil", "Lea Lea", "Victoria", "Port Moresby"],
         answer: 3,
-        image: "<img src='../img/papua' alt='papua'/>"
+        image: "./assets/img/papua.jpg"
 
     },
     {
         question: "What is the capital of Nepal?",
         possibles: ["Bhutan", "Dhaka", "Kathmandu", "Kanpur"],
         answer: 2,
-        image: "<img src='../img/nepal' alt='nepal'/>"
+        image: "./assets/img/nepal.jpg"
 
     },
     {
         question: "What is the capital of Vietnam?",
         possibles: ["Saigon", "Ho Chi Minh City", "Nha Trang", "Hanoi"],
         answer: 3,
-        image: "<img src='../img/vietnam' alt='vietnam'/>"
+        image: "./assets/img/vietnam.jpg"
 
     },
     {
         question: "What is the capital of Nigeria?",
         possibles: ["Niamey", "Abuja", "Agadez", "Maradi"],
         answer: 1,
-        image: "<img src='../img/nigeria' alt='nigeria'/>"
+        image: "./assets/img/nigeria.jpg"
 
     },
  
@@ -137,8 +138,12 @@ function timeoutPage() {
     $(".box").empty();
     $(".box").append("<h1 class='declaration'>Not fast enough!</h1>")
     $(".box").append("<h1 class='correction'>The correct answer was: " + questions[i].possibles[correctIndex] + "</h1>")
+    let newImage = $("<img>");
+    let imageURL = questions[i].image;
+    $(".box").append(newImage);
+    $("img").attr('src', imageURL);
     numIncorrect++;
-    //show timeout answer screen
+
     if (i<11){
         i++;
         timer2 = setTimeout(nextSlide, 1000);
@@ -155,7 +160,7 @@ function timeoutPage() {
 function showAnswer() {
     correctIndex = questions[i].answer;
     $(".box").empty();
-    //show answer screen
+
     if (userRight) {
         $(".box").append("<h1 class='declaration'>How did you know that?!</h1>")
         numCorrect++;
@@ -165,7 +170,10 @@ function showAnswer() {
         $(".box").append("<h1 class='correction'>The correct answer was: " + questions[i].possibles[correctIndex] + "</h1>")
         numIncorrect++;
     }
-
+    let newImage = $("<img>");
+    let imageURL = questions[i].image;
+    $(".box").append(newImage);
+    $("img").attr('src', imageURL);
     if (i<11){
         i++;
         timer2 = setTimeout(nextSlide, 1000);
