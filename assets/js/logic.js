@@ -73,10 +73,13 @@ let questions = [
 
 
 let i = 0;
-let correct = 0;
-let incorrect = 0;
+let numCorrect = 0;
+let numIncorrect = 0;
 let timer1;
 let timer2;
+let timer3;
+let userChoice;
+let userRight;
 
 
 $(".btn").on("click", initializeGame);
@@ -84,8 +87,8 @@ $(".btn").on("click", initializeGame);
 function initializeGame() {
     i=0;
     nextSlide();
-    correct = 0;
-    incorrect = 0;
+    numCorrect = 0;
+    numIncorrect = 0;
 
 }
 
@@ -98,8 +101,8 @@ function nextSlide() {
     let q = $("<h1 class='quest'>").append(questions[i].question);
     let a1 = $("<button class='options' id=0>").append(questions[i].possibles[0]);
     let a2 = $("<button class='options' id=1>").append(questions[i].possibles[1]);
-    let a3 = $("<button class='options' id=3>").append(questions[i].possibles[2]);
-    let a4 = $("<button class='options' id=4>").append(questions[i].possibles[3]);
+    let a3 = $("<button class='options' id=2>").append(questions[i].possibles[2]);
+    let a4 = $("<button class='options' id=3>").append(questions[i].possibles[3]);
 
     $(".box").append(q);
     $(".box").append(a1);
@@ -110,29 +113,41 @@ function nextSlide() {
     
     $(".options").click(function(event) {
         clearTimeout(timer1);
-        console.log(event.target.id);
+        userChoice = (event.target.id);
+        console.log(userChoice);
         
-        // let userChoice = $("this").val();
-        // console.log(userChoice);
-        // showAnswer();
+        $(".box").empty();
+        console.log(questions[i].answer);
+        //show answer screen
+    
+        if (userChoice==questions[i].answer) {
+            console.log("correct!");
+            userRight=true;
+        }
+        else {
+            console.log("wrong!");
+            userRight=false;
+        }
+        showAnswer();
     });
 }
 
 
 function timeoutPage() {
     $(".box").empty();
-
+    $(".box").append("<h1>Not fast enough!</h1>")
+    numIncorrect++;
     //show timeout answer screen
-    if (i<10){
+    if (i<11){
         i++;
         timer2 = setTimeout(nextSlide, 1000);
         console.log(i);
    
     }
-    if (i===10) {
+    if (i===11) {
         clearTimeout(timer2);
         console.log("Game over!");
-        finalScreen();
+        timer3 = setTimeout(finalScreen, 1000);
         
     }
     console.log("Answer Page!");
@@ -141,17 +156,25 @@ function timeoutPage() {
 
 function showAnswer() {
     $(".box").empty();
-    console.log("clicked button");
     //show answer screen
-    if (i<10){
+    if (userRight) {
+        $(".box").append("<h1>Nice work!</h1>")
+        numCorrect++;
+    }
+    else {
+        $(".box").append("<h1>Not even close!</h1>")
+        numIncorrect++;
+    }
+
+    if (i<11){
         i++;
         timer2 = setTimeout(nextSlide, 1000);
         console.log(i);
     }
-    if (i===10) {
+    if (i===11) {
         clearTimeout(timer2);
         console.log("Game over!");
-        finalScreen();
+        timer3 = setTimeout(finalScreen, 1000);
         
     }
     console.log("Answer Page!");
@@ -159,7 +182,11 @@ function showAnswer() {
 
 
 function finalScreen() {
-
+    clearTimeout(timer3);
+    $(".box").empty();
+    $(".box").append("<h1>Game Over!</h1>")
+    $(".box").append("<h1>Number of correct answers: " + numCorrect + "</h1>")
+    $(".box").append("<h1>Number of incorrect answers: " + numIncorrect + "</h1>")
 }
 
 
