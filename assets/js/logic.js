@@ -20,7 +20,7 @@ let questions = [
         question: "What is the capital of Finland?",
         possibles: ["Stockholm", "Oslo", "Helsinki", "Copenhagen"],
         answer: 2,
-        image: "<./assets/img/finland.jpg"
+        image: "./assets/img/finland.png"
 
     },
     {
@@ -116,7 +116,7 @@ function nextSlide() {
     $(".box").append(a2);
     $(".box").append(a3);
     $(".box").append(a4);
-    timer1 = setTimeout(timeoutPage, 2000);
+    timer1 = setTimeout(timeoutPage, 10000);
     
     $(".options").click(function(event) {
         clearTimeout(timer1);
@@ -146,12 +146,12 @@ function timeoutPage() {
 
     if (i<11){
         i++;
-        timer2 = setTimeout(nextSlide, 1000);
+        timer2 = setTimeout(nextSlide, 4000);
    
     }
     if (i===11) {
         clearTimeout(timer2);
-        timer3 = setTimeout(finalScreen, 1000);
+        timer3 = setTimeout(finalScreen, 4000);
         
     }
 
@@ -176,12 +176,12 @@ function showAnswer() {
     $("img").attr('src', imageURL);
     if (i<11){
         i++;
-        timer2 = setTimeout(nextSlide, 1000);
+        timer2 = setTimeout(nextSlide, 4000);
     }
 
     if (i===11) {
         clearTimeout(timer2);
-        timer3 = setTimeout(finalScreen, 1000);
+        timer3 = setTimeout(finalScreen, 4000);
         
     }
 

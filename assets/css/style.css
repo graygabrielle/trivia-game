@@ -110,19 +110,19 @@ html {
 }
 
 .declaration {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    font-size: 4em;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 3em;
     letter-spacing: 4px;
     color: #e3c7a0;
     font-family: 'Fredericka the Great', cursive;
     white-space: normal;
-    line-height: 150%;
+    line-height: 130%;
 
 }
 
 .correction {
-    font-size: 2em;
+    font-size: 1.8em;
     letter-spacing: 4px;
     color: white;
     background-color: #d26b2f;
@@ -131,7 +131,8 @@ html {
     font-family: 'Special Elite', cursive;
     display: inline-block;
     white-space: normal;
-    line-height: 150%;
+    line-height: 130%;
+    margin-bottom: 20px;
 
 }
 
@@ -173,8 +174,9 @@ html {
 }
 
 img {
+    margin: 15px;
     display: block;
-    width: 200px;
+    width: 400px;
     size: contain;
     margin: 0 auto;
 }
