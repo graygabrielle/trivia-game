@@ -90,9 +90,11 @@ let numIncorrect = 0;
 let timer1;
 let timer2;
 let timer3;
+let timerDisplay;
 let userChoice;
 let userRight;
 let correctIndex;
+let timeRemaining = 15;
 
 
 $(".btn").on("click", nextSlide);
@@ -110,13 +112,24 @@ function nextSlide() {
     let a3 = $("<button class='options' id=2>").append(questions[i].possibles[2]);
     let a4 = $("<button class='options' id=3>").append(questions[i].possibles[3]);
 
-    $(".box").append("<h1 class='timer'>Time Remaining: 10sec<h1>")
+    $(".box").append("<h1 class='timer'>Time Remaining: <span class='timeRemaining'>15</span> sec<h1>")
+  
     $(".box").append(q);
     $(".box").append(a1);
     $(".box").append(a2);
     $(".box").append(a3);
     $(".box").append(a4);
-    timer1 = setTimeout(timeoutPage, 10000);
+    timer1 = setTimeout(timeoutPage, 15000);
+    timerDisplay = setInterval(function(){
+        timeRemaining--;
+        $(".timeRemaining").html(timeRemaining);
+        if (timeRemaining<1) {
+            clearInterval(timerDisplay);
+            timeRemaining=15;
+        }
+        
+    }, 1000)
+ 
     
     $(".options").click(function(event) {
         clearTimeout(timer1);
@@ -143,7 +156,8 @@ function timeoutPage() {
     $(".box").append(newImage);
     $("img").attr('src', imageURL);
     numIncorrect++;
-
+    clearInterval(timerDisplay);
+    timeRemaining=15;
     if (i<11){
         i++;
         timer2 = setTimeout(nextSlide, 4000);
@@ -160,7 +174,8 @@ function timeoutPage() {
 function showAnswer() {
     correctIndex = questions[i].answer;
     $(".box").empty();
-
+    clearInterval(timerDisplay);
+    timeRemaining=15;
     if (userRight) {
         $(".box").append("<h1 class='declaration'>How did you know that?!</h1>")
         numCorrect++;
@@ -191,6 +206,8 @@ function restartGame() {
     i=0;
     numCorrect = 0;
     numIncorrect = 0;
+    clearInterval(timerDisplay);
+    timeRemaining=15;
     $(".box").empty();
     $(".box").append("<div class='header'>Trivia Game!</div>");
     $(".box").append("<div class='instructions'><p>How well do you know your world capitals?</p><p>Choose the right answer before time runs out!</p></div>");
@@ -200,6 +217,8 @@ function restartGame() {
 
 function finalScreen() {
     clearTimeout(timer3);
+    clearInterval(timerDisplay);
+    timeRemaining=15;
     $(".box").empty();
     $(".box").append("<h1 class='gameOver'>Game Over!</h1>")
     $(".box").append("<h1 class='correct'>Correct: " + numCorrect + "</h1><br><br>")

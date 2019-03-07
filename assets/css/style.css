@@ -136,6 +136,11 @@ html {
 
 }
 
+.timeRemaining {
+    font-family:  'Fredericka the Great', cursive;
+    font-size: 1.5em;
+}
+
 .gameOver {
     margin-top: 40px;
     margin-bottom: 30px;
