@@ -72,18 +72,24 @@ let questions = [
 
 
 
+let i = 0;
+let correct = 0;
+let incorrect = 0;
+let timer1;
+let timer2;
 
 
 $(".btn").on("click", initializeGame);
 
 function initializeGame() {
-
+    i=0;
     nextSlide();
-    
-    
+    correct = 0;
+    incorrect = 0;
+
 }
 
-let i = 0;
+
 
 function nextSlide() {
 
@@ -100,14 +106,24 @@ function nextSlide() {
     $(".box").append(a2);
     $(".box").append(a3);
     $(".box").append(a4);
-    setTimeout(answerPage, 2000);
+    timer1 = setTimeout(answerPage, 500);
     
 }
 
 function answerPage() {
     $(".box").empty();
-    i++;
-    setTimeout(nextSlide, 2000);
+    if (i<=10){
+        i++;
+        timer2 = setTimeout(nextSlide, 500);
+        console.log(i);
+    }
+    if (i===11) {
+        clearTimeout(timer2);
+        console.log("Game over!");
+        
+    }
+    console.log("Answer Page!");
+
 }
 
     // $(".options").on("click", function(){
