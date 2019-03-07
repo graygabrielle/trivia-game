@@ -10,8 +10,8 @@ html {
 .box {
     background: rgba(0, 0, 0, 0.808);
     position: relative;
-    margin: 25vh auto;
-    height: 50vh;
+    margin: 20vh auto;
+    height: 60vh;
     width: 60%;
     color: white;
     text-align: center;
@@ -31,31 +31,46 @@ html {
 
 .btn {
     font-family: 'Fredericka the Great', cursive;
-    margin-top: 30px;
+    margin-top: 60px;
     padding: 10px 35px;
     background-color: #e3c7a0;
     color: white;
     font-size: 2.5em;
     border: 1px solid white;
     border-radius: 20%/50%;
-}
-
-button {
     outline: none;
 }
 
-button:hover {
+
+.btn:hover {
     background-color: #e3c7a0bb;
     color: white;
 }
 
-button:active {
+.btn:active {
     background-color: black;
+}
+
+.options {
+    background-color: black;
+    display: block;
+    width: 300px;
+    text-align: center;
+    color: white;
+    font-family: 'Special Elite', cursive;
+    font-size: 1.5em;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.quest {
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
 .instructions{
     font-family: 'Amatic SC', cursive;
-    font-weight: lighter;
+    font-weight: bolder;
     font-size: 2em;
     color: white;
 

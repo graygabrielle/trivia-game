@@ -70,12 +70,7 @@ let questions = [
  
 ]
 
-let i = 0;
-let q = $("<p>" + questions[i].question + "</p>");
-let a1 = $("<p>" + questions[i].possibles[0] + "</p>");
-let a2 = $("<p>" + questions[i].possibles[1] + "</p>");
-let a3 = $("<p>" + questions[i].possibles[2] + "</p>");
-let a4 = $("<p>" + questions[i].possibles[3] + "</p>");
+
 
 
 
@@ -83,17 +78,53 @@ $(".btn").on("click", initializeGame);
 
 function initializeGame() {
     $(".box").empty();
-    setTimeout(timer, 1000);
+    firstSlide();
     
 }
 
-function timer() {
-    $(".box").html(q);
+setInterval(timer, 10000);
+
+let i = 0;
+
+function firstSlide() {
+
+
+
+    let q = $("<h1 class='quest'>").append(questions[i].question);
+    let a1 = $("<button class='options'>").append(questions[i].possibles[0]);
+    let a2 = $("<button class='options'>").append(questions[i].possibles[1]);
+    let a3 = $("<button class='options'>").append(questions[i].possibles[2]);
+    let a4 = $("<button class='options'>").append(questions[i].possibles[3]);
+
+    $(".box").append(q);
     $(".box").append(a1);
     $(".box").append(a2);
     $(".box").append(a3);
     $(".box").append(a4);
     i++;
-    setTimeout(timer, 3000)
+    setInterval(timer, 3000);
+}
+
+function timer() {
+
+
+
+    let q = $("<h1 class='quest'>").append(questions[i].question);
+    let a1 = $("<button class='options'>").append(questions[i].possibles[0]);
+    let a2 = $("<button class='options'>").append(questions[i].possibles[1]);
+    let a3 = $("<button class='options'>").append(questions[i].possibles[2]);
+    let a4 = $("<button class='options'>").append(questions[i].possibles[3]);
+
+    $(".box").empty();
+    $(".box").append(q);
+    $(".box").append(a1);
+    $(".box").append(a2);
+    $(".box").append(a3);
+    $(".box").append(a4);
+    i++;
+    if (i===11) {
+        clearInterval(timer);
+        $(".box").empty();
+    }
 
 }
