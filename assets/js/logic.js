@@ -4,67 +4,78 @@ let questions = [
     {
         question: "What is the capital of Armenia?",
         possibles: ["Yerevan", "Sisian", "Tbilisi", "Baku"],
-        answer: 0
+        answer: 0,
+        image: "<img src='../img/armenia' alt='armenia'/>"
 
     },
     {
         question: "What is the capital of Kazakhstan?",
         possibles: ["Baku", "Astana", "Karagandy", "Omsk"],
-        answer: 1
+        answer: 1,
+        image: "<img src='../img/kazakhstan' alt='kazakhstan'/>"
 
     },
     {
         question: "What is the capital of Finland?",
         possibles: ["Stockholm", "Oslo", "Helsinki", "Copenhagen"],
-        answer: 2
+        answer: 2,
+        image: "<img src='../img/finland' alt='finland'/>"
 
     },
     {
         question: "What is the capital of Turkey?",
         possibles: ["Ankara", "Istanbul", "Antalya", "Izmir"],
-        answer: 0
+        answer: 0,
+        image: "<img src='../img/turkey' alt='turkey'/>"
 
     },
     {
         question: "What is the capital of Slovakia?",
         possibles: ["Ljubljana", "Zagreb", "Bratislava", "Sarajevo"],
-        answer: 2
+        answer: 2,
+        image: "<img src='../img/slovakia' alt='slovakia'/>"
 
     },
     {
         question: "What is the capital of Angola?",
         possibles: ["Libreville", "Kinshasa", "Bangui", "Luanda"],
-        answer: 3
+        answer: 3,
+        image: "<img src='../img/angola' alt='angola'/>"
 
     },
     {
         question: "What is the capital of Ecuador?",
         possibles: ["Quito", "Bogota", "Caracas", "Santiago"],
-        answer: 0
+        answer: 0,
+        image: "<img src='../img/ecuador' alt='ecuador'/>"
 
     },
     {
         question: "What is the capital of Papua New Guinea?",
         possibles: ["Tabubil", "Lea Lea", "Victoria", "Port Moresby"],
-        answer: 3
+        answer: 3,
+        image: "<img src='../img/papua' alt='papua'/>"
 
     },
     {
         question: "What is the capital of Nepal?",
         possibles: ["Bhutan", "Dhaka", "Kathmandu", "Kanpur"],
-        answer: 2
+        answer: 2,
+        image: "<img src='../img/nepal' alt='nepal'/>"
 
     },
     {
         question: "What is the capital of Vietnam?",
         possibles: ["Saigon", "Ho Chi Minh City", "Nha Trang", "Hanoi"],
-        answer: 3
+        answer: 3,
+        image: "<img src='../img/vietnam' alt='vietnam'/>"
 
     },
     {
         question: "What is the capital of Nigeria?",
         possibles: ["Niamey", "Abuja", "Agadez", "Maradi"],
-        answer: 1
+        answer: 1,
+        image: "<img src='../img/nigeria' alt='nigeria'/>"
 
     },
  
