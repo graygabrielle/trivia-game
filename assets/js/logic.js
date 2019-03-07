@@ -80,6 +80,7 @@ let timer2;
 let timer3;
 let userChoice;
 let userRight;
+let correctIndex;
 
 
 $(".btn").on("click", initializeGame);
@@ -104,28 +105,22 @@ function nextSlide() {
     let a3 = $("<button class='options' id=2>").append(questions[i].possibles[2]);
     let a4 = $("<button class='options' id=3>").append(questions[i].possibles[3]);
 
+    $(".box").append("<h1 class='timer'>Time Remaining: 10sec<h1>")
     $(".box").append(q);
     $(".box").append(a1);
     $(".box").append(a2);
     $(".box").append(a3);
     $(".box").append(a4);
-    timer1 = setTimeout(timeoutPage, 1000);
+    timer1 = setTimeout(timeoutPage, 2000);
     
     $(".options").click(function(event) {
         clearTimeout(timer1);
         userChoice = (event.target.id);
-        console.log(userChoice);
-        
-        $(".box").empty();
-        console.log(questions[i].answer);
-        //show answer screen
-    
+
         if (userChoice==questions[i].answer) {
-            console.log("correct!");
             userRight=true;
         }
         else {
-            console.log("wrong!");
             userRight=false;
         }
         showAnswer();
@@ -134,23 +129,22 @@ function nextSlide() {
 
 
 function timeoutPage() {
+    correctIndex = questions[i].answer;
     $(".box").empty();
-    $(".box").append("<h1>Not fast enough!</h1>")
+    $(".box").append("<h1 class='tooSlow'>Not fast enough!</h1>")
+    $(".box").append("<h1 class='correction'>The correct answer was: " + questions[i].possibles[correctIndex] + "</h1>")
     numIncorrect++;
     //show timeout answer screen
     if (i<11){
         i++;
         timer2 = setTimeout(nextSlide, 1000);
-        console.log(i);
    
     }
     if (i===11) {
         clearTimeout(timer2);
-        console.log("Game over!");
-        timer3 = setTimeout(finalScreen, 1000);
+        timer3 = setTimeout(finalScreen, 500);
         
     }
-    console.log("Answer Page!");
 
 }
 
@@ -158,35 +152,34 @@ function showAnswer() {
     $(".box").empty();
     //show answer screen
     if (userRight) {
-        $(".box").append("<h1>Nice work!</h1>")
+        $(".box").append("<h1 class='congrats'>Nice work!</h1>")
         numCorrect++;
     }
     else {
-        $(".box").append("<h1>Not even close!</h1>")
+        $(".box").append("<h1 class='niceTry'>Not even close!</h1>")
         numIncorrect++;
     }
 
     if (i<11){
         i++;
-        timer2 = setTimeout(nextSlide, 1000);
-        console.log(i);
+        timer2 = setTimeout(nextSlide, 500);
     }
+
     if (i===11) {
         clearTimeout(timer2);
-        console.log("Game over!");
-        timer3 = setTimeout(finalScreen, 1000);
+        timer3 = setTimeout(finalScreen, 500);
         
     }
-    console.log("Answer Page!");
+
 }
 
 
 function finalScreen() {
     clearTimeout(timer3);
     $(".box").empty();
-    $(".box").append("<h1>Game Over!</h1>")
-    $(".box").append("<h1>Number of correct answers: " + numCorrect + "</h1>")
-    $(".box").append("<h1>Number of incorrect answers: " + numIncorrect + "</h1>")
+    $(".box").append("<h1 class='gameOver'>Game Over!</h1>")
+    $(".box").append("<h1 class='correct'>Correct: " + numCorrect + "</h1><br><br>")
+    $(".box").append("<h1 class='incorrect'>Incorrect: " + numIncorrect + "</h1>")
 }
 
 

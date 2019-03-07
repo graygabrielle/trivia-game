@@ -5,33 +5,37 @@ html {
     width: 100%;
     background-position: center center;
     font-family: 'Special Elite', cursive;
+
 }
 
 .box {
     background: rgba(0, 0, 0, 0.808);
     position: relative;
-    margin: 20vh auto;
-    height: 60vh;
-    width: 60%;
+    margin: 10vh auto;
+    height: 80vh;
+    width: 75%;
     color: white;
     text-align: center;
     padding: 30px;
     box-sizing: border-box;
     border-radius: 15px;
+    overflow: hidden;
+    white-space: nowrap;
 
 }
 
 .header {
     font-family: 'Fredericka the Great', cursive;
     color: #e3c7a0;
-    font-size: 3.5em;
+    font-size: 6em;
+    margin-top: 20px;
     letter-spacing: 4px;
     margin-bottom: 30px;
 }
 
 .btn {
     font-family: 'Fredericka the Great', cursive;
-    margin-top: 60px;
+    margin-top: 10vh;
     padding: 10px 35px;
     background-color: #e3c7a0;
     color: white;
@@ -52,30 +56,82 @@ html {
 }
 
 .options {
-    background-color: black;
+    background-color: #e3c7a0;
     display: block;
     width: 300px;
     text-align: center;
-    color: white;
+    color: black;
     font-family: 'Special Elite', cursive;
     font-size: 1.5em;
-    padding: 20px;
-    margin: 0 auto;
+    padding: 10px;
+    margin: 15px auto;
 }
 
 .quest {
-    font-size: 2em;
-    margin-bottom: 20px;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: white;
+    background-color: #d26b2f;
+    padding: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    font-family: 'Amatic SC', cursive;
+    transform: scale(1, .5);
 }
 
 .instructions{
     font-family: 'Amatic SC', cursive;
     font-weight: bolder;
-    font-size: 2em;
+    font-size: 2.5em;
     color: white;
+    transform: scale(1, .5);
+    line-height: 200%;
 
 }
 
+.timer {
+    color: #e3c7a0;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+}
+
+.gameOver {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    font-size: 6em;
+    letter-spacing: 4px;
+    color: #e3c7a0;
+    font-family: 'Fredericka the Great', cursive;
+
+}
+
+.correct {
+    font-size: 2.5em;
+    letter-spacing: 4px;
+    color: white;
+    background-color: #d26b2f;
+    padding: 15px;
+    border-radius: 15px;
+    font-family: 'Special Elite', cursive;
+    display: inline-block;
+
+}
+
+.incorrect {
+    font-size: 2.5em;
+    letter-spacing: 4px;
+    color: white;
+    background-color: #d26b2f;
+    padding: 15px;
+    border-radius: 15px;
+    font-family: 'Special Elite', cursive;
+    display: inline-block;
+
+}
 /* font-family: 'Amatic SC', cursive;
 font-family: 'Special Elite', cursive;
 font-family: 'Fredericka the Great', cursive; */
+
