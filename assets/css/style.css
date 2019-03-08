@@ -276,26 +276,26 @@ img {
     }
     
     .gameOver {
-        font-size: 4em;
-        margin-top: 30px;
+        font-size: 3em;
+        margin-top: 20px;
         letter-spacing: 2px;
         margin-bottom: 10px;
     
     }
     
     .correct {
-        font-size: 1.2em;
+        font-size: 1em;
         letter-spacing: 2px;
         padding: 5px;
         border-radius: 5px;
         line-height: 110%;
-        margin-top: 20px;
+        margin-top: 10px;
         margin-bottom: 10px;
     
     }
     
     .incorrect {
-        font-size: 1.2em;
+        font-size: 1em;
         letter-spacing: 2px;
         padding: 5px;
         border-radius: 5px;
@@ -618,16 +618,6 @@ img {
         transform: scale(1, .5);
         line-height: 150%;
 
-    }
-
-    .btn:hover {
-        background-color:  #e3c7a0;
-        color: black;
-    }
-
-    .options:hover {
-        background-color:  #e3c7a0;
-        color: black;
     }
 
     .quest {
