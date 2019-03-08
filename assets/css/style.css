@@ -205,8 +205,8 @@ img {
     }
     
     .btn {
-        margin-top: 50px;
-        margin-bottom: 30px;
+        margin-top: 10px;
+        margin-bottom: 20px;
         padding: 10px 35px;
         font-size: 2.5em;
 
@@ -229,7 +229,7 @@ img {
         width: 220px;
         font-size: 1em;
         padding: 10px;
-        margin: 20px auto;
+        margin: 10px auto;
         outline: none;
     }
 
@@ -240,7 +240,7 @@ img {
 
     .quest {
         font-size: 2em;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         padding: 10px;
         border-radius: 5px;
     }
@@ -304,6 +304,7 @@ img {
         margin: 15px;
         display: block;
         width: 250px;
+        height: 150px;
         size: cover;
         margin: 5vh auto;
     }
