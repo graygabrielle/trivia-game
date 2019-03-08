@@ -126,12 +126,12 @@ html {
     letter-spacing: 4px;
     color: white;
     background-color: #d26b2f;
-    padding: 15px;
+    padding: 10px;
     border-radius: 15px;
     font-family: 'Special Elite', cursive;
     display: inline-block;
     white-space: normal;
-    line-height: 130%;
+    line-height: 110%;
     margin-bottom: 10px;
 
 }
@@ -387,11 +387,11 @@ img {
     }
     
     .correction {
-        font-size: 1.5em;
+        font-size: 1.3em;
         letter-spacing: 2px;
         padding: 5px;
         border-radius: 5px;
-        line-height: 120%;
+        line-height: 110%;
         margin-bottom: 20px;
         margin-top: 20px;
     
@@ -516,8 +516,8 @@ img {
     }
     
     .correction {
-        font-size: 1.5em;
-        letter-spacing: 4px;
+        font-size: 1.3em;
+        letter-spacing: 2px;
         color: white;
         background-color: #d26b2f;
         padding: 5px;
@@ -525,7 +525,7 @@ img {
         font-family: 'Special Elite', cursive;
         display: inline-block;
         white-space: normal;
-        line-height: 130%;
+        line-height: 110%;
         margin-bottom: 15px;
     
     }
@@ -663,7 +663,7 @@ img {
     }
     
     .correction {
-        font-size: 1.8em;
+        font-size: 1.5em;
         letter-spacing: 4px;
         color: white;
         background-color: #d26b2f;
