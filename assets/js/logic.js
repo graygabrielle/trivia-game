@@ -112,7 +112,7 @@ function nextSlide() {
     let a3 = $("<button class='options' id=2>").append(questions[i].possibles[2]);
     let a4 = $("<button class='options' id=3>").append(questions[i].possibles[3]);
 
-    $(".box").append("<h1 class='timer'>Time Remaining: <span class='timeRemaining'>15</span> sec<h1>")
+    $(".box").append("<h1 class='timer'><span class='timeRemaining'>15</span> seconds<h1>")
   
     $(".box").append(q);
     $(".box").append(a1);
