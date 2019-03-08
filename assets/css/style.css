@@ -182,8 +182,8 @@ html {
 img {
     margin: 15px;
     display: block;
-    width: 400px;
-    height: 290px;
+    width: 450px;
+    height: 350px;
     size: cover;
     margin: 30px auto;
 }
@@ -276,7 +276,7 @@ img {
     
     .gameOver {
         font-size: 4em;
-        margin-top: 50px;
+        margin-top: 30px;
         letter-spacing: 2px;
         margin-bottom: 30px;
     
@@ -306,8 +306,8 @@ img {
     img {
         margin: 15px;
         display: block;
-        width: 300px;
-        height: 200px;
+        width: 200px;
+        height: 150px;
         size: cover;
         margin: 5vh auto;
     }
@@ -436,7 +436,7 @@ img {
     }
 }
 
-@media only screen and (min-width: 640px) and (max-width: 762px) {
+@media only screen and (min-width: 640px) and (max-width: 899px) {
 
     .box {
         margin: 8vh auto;
@@ -455,7 +455,7 @@ img {
     }
     
     .btn {
-        margin-top: 90px;
+        margin-top: 40px;
         margin-bottom: 30px;
         padding: 10px 35px;
         font-size: 2.5em;
@@ -538,7 +538,7 @@ img {
     .gameOver {
         margin-top: 40px;
         margin-bottom: 30px;
-        font-size: 6em;
+        font-size: 4em;
         letter-spacing: 4px;
         color: #e3c7a0;
         font-family: 'Fredericka the Great', cursive;
@@ -547,11 +547,11 @@ img {
     }
     
     .correct {
-        font-size: 2.5em;
+        font-size: 2em;
         letter-spacing: 4px;
         color: white;
         background-color: #d26b2f;
-        padding: 15px;
+        padding: 10px;
         border-radius: 15px;
         font-family: 'Special Elite', cursive;
         display: inline-block;
@@ -560,11 +560,11 @@ img {
     }
     
     .incorrect {
-        font-size: 2.5em;
+        font-size: 2em;
         letter-spacing: 4px;
         color: white;
         background-color: #d26b2f;
-        padding: 15px;
+        padding: 10px;
         border-radius: 15px;
         font-family: 'Special Elite', cursive;
         display: inline-block;
@@ -573,17 +573,18 @@ img {
     }
     
     img {
-        margin: 15px;
+        
         display: block;
         width: 350px;
         height: 250px;
         size: cover;
         margin: 0 auto;
+        margin-top: 30px;
     }
 
 }
 
-@media only screen and (min-width: 763px) and (max-width: 1000px) {
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
 
     .box {
         margin: 8vh auto;
@@ -602,7 +603,7 @@ img {
     }
     
     .btn {
-        margin-top: 90px;
+        margin-top: 50px;
         margin-bottom: 30px;
         padding: 10px 35px;
         font-size: 2.5em;
@@ -653,7 +654,7 @@ img {
     .declaration {
         margin-top: 20px;
         margin-bottom: 15px;
-        font-size: 3em;
+        font-size: 2.5em;
         letter-spacing: 4px;
         color: #e3c7a0;
         font-family: 'Fredericka the Great', cursive;
@@ -685,7 +686,7 @@ img {
     .gameOver {
         margin-top: 40px;
         margin-bottom: 30px;
-        font-size: 6em;
+        font-size: 4em;
         letter-spacing: 4px;
         color: #e3c7a0;
         font-family: 'Fredericka the Great', cursive;
@@ -694,11 +695,11 @@ img {
     }
     
     .correct {
-        font-size: 2.5em;
+        font-size: 2em;
         letter-spacing: 4px;
         color: white;
         background-color: #d26b2f;
-        padding: 15px;
+        padding: 10px;
         border-radius: 15px;
         font-family: 'Special Elite', cursive;
         display: inline-block;
@@ -707,11 +708,11 @@ img {
     }
     
     .incorrect {
-        font-size: 2.5em;
+        font-size: 2em;
         letter-spacing: 4px;
         color: white;
         background-color: #d26b2f;
-        padding: 15px;
+        padding: 10px;
         border-radius: 15px;
         font-family: 'Special Elite', cursive;
         display: inline-block;
@@ -722,8 +723,8 @@ img {
     img {
         margin: 15px;
         display: block;
-        width: 300px;
-        height: 200px;
+        width: 400px;
+        height: 300px;
         size: cover;
         margin: 0 auto;
     }
