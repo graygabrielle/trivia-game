@@ -182,8 +182,8 @@ html {
 img {
     margin: 15px;
     display: block;
-    width: 500px;
-    height: 330px;
+    width: 400px;
+    height: 290px;
     size: cover;
     margin: 30px auto;
 }
@@ -307,7 +307,7 @@ img {
         margin: 15px;
         display: block;
         width: 250px;
-        height: 150px;
+        height: 200px;
         size: cover;
         margin: 5vh auto;
     }
@@ -429,7 +429,7 @@ img {
     img {
         margin: 15px;
         display: block;
-        width: 300px;
+        width: 250px;
         height: 200px;
         size: cover;
         margin: 5vh auto;
@@ -505,8 +505,8 @@ img {
     
     .declaration {
         margin-top: 20px;
-        margin-bottom: 15px;
-        font-size: 3em;
+        margin-bottom: 10px;
+        font-size: 2em;
         letter-spacing: 4px;
         color: #e3c7a0;
         font-family: 'Fredericka the Great', cursive;
@@ -516,17 +516,17 @@ img {
     }
     
     .correction {
-        font-size: 1.8em;
+        font-size: 1.5em;
         letter-spacing: 4px;
         color: white;
         background-color: #d26b2f;
-        padding: 15px;
+        padding: 5px;
         border-radius: 15px;
         font-family: 'Special Elite', cursive;
         display: inline-block;
         white-space: normal;
         line-height: 130%;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     
     }
     
@@ -575,7 +575,8 @@ img {
     img {
         margin: 15px;
         display: block;
-        width: 400px;
+        width: 300px;
+        height: 250px;
         size: contain;
         margin: 0 auto;
     }
@@ -666,12 +667,12 @@ img {
         letter-spacing: 4px;
         color: white;
         background-color: #d26b2f;
-        padding: 15px;
+        padding: 5px;
         border-radius: 15px;
         font-family: 'Special Elite', cursive;
         display: inline-block;
         white-space: normal;
-        line-height: 130%;
+        line-height: 110%;
         margin-bottom: 20px;
     
     }
@@ -721,7 +722,8 @@ img {
     img {
         margin: 15px;
         display: block;
-        width: 400px;
+        width: 300px;
+        height: 200px;
         size: contain;
         margin: 0 auto;
     }
