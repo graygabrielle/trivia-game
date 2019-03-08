@@ -59,7 +59,7 @@ html {
 .options {
     background-color: #e3c7a0;
     display: block;
-    width: 300px;
+    width: 400px;
     text-align: center;
     color: black;
     font-family: 'Special Elite', cursive;
@@ -185,9 +185,6 @@ img {
     size: contain;
     margin: 0 auto;
 }
-/* font-family: 'Amatic SC', cursive;
-font-family: 'Special Elite', cursive;
-font-family: 'Fredericka the Great', cursive; */
 
 @media only screen and (max-width:639px){
 
@@ -195,7 +192,7 @@ font-family: 'Fredericka the Great', cursive; */
         margin: 5vh auto;
         height: 90vh;
         width: 90%;
-        padding: 30px;
+        padding: 15px;
         white-space: normal;
     
     }
@@ -228,9 +225,86 @@ font-family: 'Fredericka the Great', cursive; */
         color: black;
     }
 
+    .options {
+        width: 220px;
+        font-size: 1em;
+        padding: 10px;
+        margin: 10px auto;
+        outline: none;
+    }
+
     .options:hover {
         background-color:  #e3c7a0;
         color: black;
+    }
+
+    .quest {
+        font-size: 2em;
+        margin-bottom: 15px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    
+    .timer {
+        font-size: 1em;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    
+    .declaration {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 1.8em;
+        letter-spacing: 2px;
+        line-height: 110%;
+    
+    }
+    
+    .correction {
+        font-size: 1em;
+        letter-spacing: 2px;
+        padding: 5px;
+        border-radius: 5px;
+        line-height: 110%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    
+    }
+    
+    .gameOver {
+        font-size: 3em;
+        margin-top: 20px;
+        letter-spacing: 2px;
+        margin-bottom: 0;
+    
+    }
+    
+    .correct {
+        font-size: 1em;
+        letter-spacing: 2px;
+        padding: 5px;
+        border-radius: 5px;
+        line-height: 110%;
+        margin-bottom: 20px;
+    
+    }
+    
+    .incorrect {
+        font-size: 1em;
+        letter-spacing: 2px;
+        padding: 5px;
+        border-radius: 5px;
+        line-height: 110%;
+        margin-bottom: 20px;
+    
+    }
+    
+    img {
+        margin: 15px;
+        display: block;
+        width: 250px;
+        size: cover;
+        margin: 5vh auto;
     }
 }
 @media only screen and (min-width: 640px) and (max-width: 1000px) {
@@ -276,6 +350,105 @@ font-family: 'Fredericka the Great', cursive; */
     .options:hover {
         background-color:  #e3c7a0;
         color: black;
+    }
+
+    .quest {
+        font-size: 2.5em;
+        margin-bottom: 15px;
+        color: white;
+        background-color: #d26b2f;
+        padding: 30px;
+        border-radius: 15px;
+        overflow: hidden;
+        font-family: 'Amatic SC', cursive;
+        transform: scale(1, .5);
+    }
+    
+    
+    .timer {
+        color: #e3c7a0;
+        font-size: 1.5em;
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    
+    }
+    
+    .declaration {
+        margin-top: 20px;
+        margin-bottom: 15px;
+        font-size: 3em;
+        letter-spacing: 4px;
+        color: #e3c7a0;
+        font-family: 'Fredericka the Great', cursive;
+        white-space: normal;
+        line-height: 130%;
+    
+    }
+    
+    .correction {
+        font-size: 1.8em;
+        letter-spacing: 4px;
+        color: white;
+        background-color: #d26b2f;
+        padding: 15px;
+        border-radius: 15px;
+        font-family: 'Special Elite', cursive;
+        display: inline-block;
+        white-space: normal;
+        line-height: 130%;
+        margin-bottom: 20px;
+    
+    }
+    
+    .timeRemaining {
+        font-family:  'Fredericka the Great', cursive;
+        font-size: 1.5em;
+    }
+    
+    .gameOver {
+        margin-top: 40px;
+        margin-bottom: 30px;
+        font-size: 6em;
+        letter-spacing: 4px;
+        color: #e3c7a0;
+        font-family: 'Fredericka the Great', cursive;
+        overflow: hidden;
+    
+    }
+    
+    .correct {
+        font-size: 2.5em;
+        letter-spacing: 4px;
+        color: white;
+        background-color: #d26b2f;
+        padding: 15px;
+        border-radius: 15px;
+        font-family: 'Special Elite', cursive;
+        display: inline-block;
+        overflow: hidden;
+    
+    }
+    
+    .incorrect {
+        font-size: 2.5em;
+        letter-spacing: 4px;
+        color: white;
+        background-color: #d26b2f;
+        padding: 15px;
+        border-radius: 15px;
+        font-family: 'Special Elite', cursive;
+        display: inline-block;
+        overflow: hidden;
+    
+    }
+    
+    img {
+        margin: 15px;
+        display: block;
+        width: 400px;
+        size: contain;
+        margin: 0 auto;
     }
 
 }
