@@ -11,8 +11,8 @@ html {
 .box {
     background: rgba(0, 0, 0, 0.808);
     position: relative;
-    margin: 10vh auto;
-    height: 80vh;
+    margin: 5vh auto;
+    height: 90vh;
     width: 75%;
     color: white;
     text-align: center;
@@ -112,7 +112,7 @@ html {
 .declaration {
     margin-top: 20px;
     margin-bottom: 15px;
-    font-size: 3em;
+    font-size: 2.5em;
     letter-spacing: 4px;
     color: #e3c7a0;
     font-family: 'Fredericka the Great', cursive;
@@ -122,7 +122,7 @@ html {
 }
 
 .correction {
-    font-size: 1.8em;
+    font-size: 1.5em;
     letter-spacing: 4px;
     color: white;
     background-color: #d26b2f;
@@ -132,7 +132,7 @@ html {
     display: inline-block;
     white-space: normal;
     line-height: 130%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
 }
 
@@ -153,11 +153,11 @@ html {
 }
 
 .correct {
-    font-size: 2.5em;
+    font-size: 2em;
     letter-spacing: 4px;
     color: white;
     background-color: #d26b2f;
-    padding: 15px;
+    padding: 10px;
     border-radius: 15px;
     font-family: 'Special Elite', cursive;
     display: inline-block;
@@ -166,24 +166,26 @@ html {
 }
 
 .incorrect {
-    font-size: 2.5em;
+    font-size: 2em;
     letter-spacing: 4px;
     color: white;
     background-color: #d26b2f;
-    padding: 15px;
+    padding: 10px;
     border-radius: 15px;
     font-family: 'Special Elite', cursive;
     display: inline-block;
     overflow: hidden;
+    margin-bottom: 40px;
 
 }
 
 img {
     margin: 15px;
     display: block;
-    width: 400px;
-    size: contain;
-    margin: 0 auto;
+    width: 500px;
+    height: 330px;
+    size: cover;
+    margin: 30px auto;
 }
 
 
@@ -433,7 +435,154 @@ img {
         margin: 5vh auto;
     }
 }
-@media only screen and (min-width: 640px) and (max-width: 1000px) {
+
+@media only screen and (min-width: 640px) and (max-width: 762px) {
+
+    .box {
+        margin: 8vh auto;
+        height: 84vh;
+        width: 85%;
+        padding: 30px;
+        white-space: normal;
+    
+    }
+    
+    .header {
+        font-size: 4em;
+        margin-top: 80px;
+        letter-spacing: 4px;
+        margin-bottom: 20px;
+    }
+    
+    .btn {
+        margin-top: 90px;
+        margin-bottom: 30px;
+        padding: 10px 35px;
+        font-size: 2.5em;
+
+    }
+    
+
+    .instructions{
+        font-size: 2.1em;
+        color: white;
+        transform: scale(1, .5);
+        line-height: 150%;
+
+    }
+
+    .btn:hover {
+        background-color:  #e3c7a0;
+        color: black;
+    }
+
+    .options:hover {
+        background-color:  #e3c7a0;
+        color: black;
+    }
+
+    .quest {
+        font-size: 2.5em;
+        margin-bottom: 15px;
+        color: white;
+        background-color: #d26b2f;
+        padding: 30px;
+        border-radius: 15px;
+        overflow: hidden;
+        font-family: 'Amatic SC', cursive;
+        transform: scale(1, .5);
+    }
+    
+    
+    .timer {
+        color: #e3c7a0;
+        font-size: 1.5em;
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    
+    }
+    
+    .declaration {
+        margin-top: 20px;
+        margin-bottom: 15px;
+        font-size: 3em;
+        letter-spacing: 4px;
+        color: #e3c7a0;
+        font-family: 'Fredericka the Great', cursive;
+        white-space: normal;
+        line-height: 130%;
+    
+    }
+    
+    .correction {
+        font-size: 1.8em;
+        letter-spacing: 4px;
+        color: white;
+        background-color: #d26b2f;
+        padding: 15px;
+        border-radius: 15px;
+        font-family: 'Special Elite', cursive;
+        display: inline-block;
+        white-space: normal;
+        line-height: 130%;
+        margin-bottom: 20px;
+    
+    }
+    
+    .timeRemaining {
+        font-family:  'Fredericka the Great', cursive;
+        font-size: 1.5em;
+    }
+    
+    .gameOver {
+        margin-top: 40px;
+        margin-bottom: 30px;
+        font-size: 6em;
+        letter-spacing: 4px;
+        color: #e3c7a0;
+        font-family: 'Fredericka the Great', cursive;
+        overflow: hidden;
+    
+    }
+    
+    .correct {
+        font-size: 2.5em;
+        letter-spacing: 4px;
+        color: white;
+        background-color: #d26b2f;
+        padding: 15px;
+        border-radius: 15px;
+        font-family: 'Special Elite', cursive;
+        display: inline-block;
+        overflow: hidden;
+    
+    }
+    
+    .incorrect {
+        font-size: 2.5em;
+        letter-spacing: 4px;
+        color: white;
+        background-color: #d26b2f;
+        padding: 15px;
+        border-radius: 15px;
+        font-family: 'Special Elite', cursive;
+        display: inline-block;
+        overflow: hidden;
+    
+    }
+    
+    img {
+        margin: 15px;
+        display: block;
+        width: 400px;
+        size: contain;
+        margin: 0 auto;
+    }
+
+}
+
+@media only screen and (min-width: 763px) and (max-width: 1000px) {
 
     .box {
         margin: 8vh auto;
