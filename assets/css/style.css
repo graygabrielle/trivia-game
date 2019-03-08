@@ -28,15 +28,15 @@ html {
     font-family: 'Fredericka the Great', cursive;
     color: #e3c7a0;
     font-size: 6em;
-    margin-top: 20px;
+    margin-top: 10vh;
     letter-spacing: 4px;
     margin-bottom: 30px;
 }
 
 .btn {
     font-family: 'Fredericka the Great', cursive;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  
+    margin-bottom: 10vh;
     padding: 10px 35px;
     background-color: #e3c7a0;
     color: black;
